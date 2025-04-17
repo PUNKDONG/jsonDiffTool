@@ -1,0 +1,17 @@
+{
+  "diff": " {\n   \"email\": \"alice@example.com\",\n   \"id\": 1,\n   \"name\": \"Alice\",\n-  \"role\": \"admin\",\n+  \"role\": \"user\",\n   \"status\": \"active\"\n }\n",
+  "raw1": {
+    "email": "alice@example.com",
+    "id": 1,
+    "name": "Alice",
+    "role": "admin",
+    "status": "active"
+  },
+  "raw2": {
+    "email": "alice@example.com",
+    "id": 1,
+    "name": "Alice",
+    "role": "user",
+    "status": "active"
+  }
+}
