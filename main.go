@@ -31,7 +31,9 @@ func main() {
 	r.GET("/index", func(c *gin.Context) {
 		c.File("static/index.html")
 	})
-
+	r.GET("/", func(c *gin.Context) {
+		c.File("static/index.html")
+	})
 	// 映射 /hand 到 static/hand.html
 	r.GET("/hand", func(c *gin.Context) {
 		c.File("static/hand.html")
@@ -39,7 +41,7 @@ func main() {
 	// 接收对比请求，返回 JSON 并写入 latest.json
 	r.POST("/api/diff", diffHandler)
 
-	r.Run(":8080")
+	r.Run(":9090")
 }
 
 func diffHandler(c *gin.Context) {
